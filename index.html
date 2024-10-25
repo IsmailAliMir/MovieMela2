@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MovieMela - Your Hub for Hindi and English Movie Reviews, Trailers, and More. Get the latest movie updates, reviews, and trailers.">
+    <meta name="keywords" content="movie reviews, hindi movies, english movies, movie trailers, film reviews">
+    <meta name="author" content="MovieMela Team">
+    <meta property="og:title" content="MovieMela - Your Hub for Hindi and English Movies">
+    <meta property="og:description" content="Get the latest movie reviews, trailers, and updates on MovieMela. Your one-stop destination for Hindi and English movies.">
+    <meta property="og:image" content="link_to_image.jpg"> <!-- Replace with actual image URL -->
+    <meta property="og:url" content="http://www.movie-mela.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MovieMela - Your Hub for Hindi and English Movies">
+    <meta name="twitter:description" content="Get the latest movie reviews, trailers, and updates on MovieMela.">
+    <meta name="twitter:image" content="link_to_image.jpg"> <!-- Replace with actual image URL -->
+    <link rel="canonical" href="http://www.movie-mela.com">
+    <title>MovieMela - Hindi & English Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #e50914;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+        .container {
+            padding: 20px;
+        }
+
+        .movie-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .movie-card {
+            background-color: white;
+            width: 30%;
+            margin: 15px 0;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .movie-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .movie-details {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .ad-space {
+            background-color: #ffeeba;
+            text-align: center;
+            padding: 30px;
+            margin: 30px 0;
+            border: 2px dashed #ccc;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .footer-links a {
+            color: #f9f9f9;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MovieMela</h1>
+    <p>Your Hub for Hindi and English Movie Reviews, Trailers, and More</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Hindi Movies</a>
+    <a href="#">English Movies</a>
+    <a href="#">Latest Reviews</a>
+    <div class="dropdown">
+        <a href="#" class="dropbtn">More</a>
+        <div class="dropdown-content">
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>Latest Movie Reviews</h2>
+    <div class="movie-section">
+        <div class="movie-card" onclick="toggleDetails(this)">
+            <img src="movie1.jpg" alt="Movie 1 Review">
+            <h3>Movie 1 - Review</h3>
+            <p>A thrilling Hindi action movie. Read our detailed review to know more about the plot, performances, and overall experience.</p>
+            <div class="movie-details">
+                <p>Detailed review for Movie 1.</p>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="toggleDetails(this)">
+            <img src="movie2.jpg" alt="Movie 2 Review">
+            <h3>Movie 2 - Review</h3>
+            <p>An emotional drama in English. Discover our review on the storyline, acting, and the impact of this movie.</p>
+            <div class="movie-details">
+                <p>Detailed review for Movie 2.</p>
+            </div>
+        </div>
+
+        <div class="movie-card" onclick="toggleDetails(this)">
+            <img src="movie3.jpg" alt="Movie 3 Review">
+            <h3>Movie 3 - Review</h3>
+            <p>A groundbreaking Hindi thriller. Check out our review for insights into the movie’s unique elements and audience reception.</p>
+            <div class="movie-details">
+                <p>Detailed review for Movie 3.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ad-space">
+        <h2>Advertisement</h2>
+        <p>Your Ad Here! Place Google AdSense or other ad networks to generate revenue.</p>
+    </div>
+
+    <h2>Upcoming Movie Trailers</h2>
+    <div class="movie-section">
+        <div class="movie-card">
+            <img src="trailer1.jpg" alt="Trailer 1">
+            <h3>Trailer 1 - Movie Trailer</h3>
+            <p>Watch the latest trailer of Movie 1. Get a glimpse of what’s coming and what to expect from this movie.</p>
+        </div>
+
+        <div class="movie-card">
+            <img src="trailer2.jpg" alt="Trailer 2">
+            <h3>Trailer 2 - Movie Trailer</h3>
+            <p>Watch the thrilling trailer of Movie 2. See highlights and get excited about this upcoming release.</p>
+        </div>
+
+        <div class="movie-card">
+            <img src="trailer3.jpg" alt="Trailer 3">
+            <h3>Trailer 3 - Movie Trailer</h3>
+            <p>Watch the heart-touching trailer of Movie 3. Discover why this movie is a must-watch.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 MovieMela. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </div>
+</footer>
+
+<script>
+    function toggleDetails(card) {
+        const details = card.querySelector('.movie-details');
+        if (details.style.display === 'block') {
+            details.style.display = 'none';
+        } else {
+            details.style.display = 'block';
